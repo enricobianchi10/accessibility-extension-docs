@@ -12,92 +12,79 @@ I requisiti funzionali sono raggruppati usando una divisione ad alto livello del
 
 \begin{freq}
     {RFO-1}
-    {Il sistema deve permettere la visualizzazione di un messaggio che indica lo stato delle tab aperte}
+    {Il sistema deve poter visualizzare gli elementi necessari per avviare un'analisi}
     \label{rf:RFO-1}%
 
-    \subreq{RFO-1.1}{\hyperref[uc:UC-4]{UC-4}}{Il sistema deve visualizzare un messaggio che indica l'assenza di una tab di Instagram aperta}
-    \subreq{RFO-1.2}{\hyperref[uc:UC-5]{UC-5}}{Il sistema deve visualizzare un messaggio che indica l'assenza del login nella tab di Instagram aperta}
+    \subreq{RFO-1.1}{\hyperref[uc:UC-1]{UC-1}}{Il sistema deve visualizzare un pulsante che permetta di iniziare l'analisi delle immagini senza alt}
+    \subreq{RFO-1.2}{\hyperref[uc:UC-6]{UC-6}}{Il sistema deve visualizzare un pulsante che permetta di iniziare l'analisi dei video senza sottotitoli}
 \end{freq}
 
 \begin{freq}
     {RFO-2}
-    {Il sistema deve poter visualizzare gli elementi necessari per permettere la raccolta dei dati}
-    \label{rf:RF2-3}%
+    {Il sistema deve poter visualizzare il risultato dell'analisi delle immagini}
+    \label{rf:RFO-2}%
 
-    \subreq{RFO-2.1}{\hyperref[uc:UC-8]{UC-8}}{Il sistema deve visualizzare un pulsante che permetta di iniziare la raccolta dati}
+    \subreq{RFO-2.1}{\hyperref[uc:UC-2]{UC-2}}{Se non sono presenti immagini senza alt il sistema deve mostrare un messaggio che lo indica}
+    \subreq{RFO-2.2}{\hyperref[uc:UC-2]{UC-2}}{Se sono presenti immagini senza alt il sistema deve mostrare la prima pagina di risultati dell'analisi seguendo \hyperref[rf:RFO-4]{RFO-4}}
 \end{freq}
 
 \begin{freq}
     {RFO-3}
-    {Il sistema deve poter visualizzare gli elementi necessari per notificare l'esito della raccolta dati}
+    {Il sistema deve poter visualizzare il risultato dell'analisi dei video}
     \label{rf:RFO-3}%
 
-    \subreq{RFO-3.1}{\hyperref[uc:UC-8]{UC-8}}{Il sistema deve visualizzare un messaggio che informa l'utente che la raccolta dei dati è in esecuzione}
-    \subreq{RFO-3.2}{\hyperref[uc:UC-8]{UC-8}}{Il sistema deve visualizzare un messaggio che indica il successo della raccolta dati}
-    \subreq{RFO-3.3}{\hyperref[uc:UC-8]{UC-8}}{Il sistema deve visualizzare un link all pagina dell'ultimo post di cui sono stati raccolti i dati}
-    \subreq{RFO-3.4}{\hyperref[uc:UC-8]{UC-8}}{Il sistema deve visualizzare un messaggio che indica il numero di post di cui sono stati raccolti i dati e il numero di post totale del profilo}
-    \subreq{RFO-3.5}{\hyperref[uc:UC-9]{UC-9}}{Se il caricamento della pagina di un post durante la raccolta non viene completato nei tempi previsti, il sistema deve visualizzare un messaggio che informa l'utente dell'errore}
+    \subreq{RFO-3.1}{\hyperref[uc:UC-2]{UC-2}}{Se non sono presenti video senza sottotitoli il sistema deve mostrare un messaggio che lo indica}
+    \subreq{RFO-3.2}{\hyperref[uc:UC-2]{UC-2}}{Se sono presenti video senza sottotitoli il sistema deve mostrare la prima pagina di risultati dell'analisi seguendo \hyperref[rf:RFO-4]{RFO-4}}
 \end{freq}
 
 \begin{freq}
     {RFO-4}
-    {Il sistema deve poter visualizzare gli elementi necessari per permettere la pubblicazione delle risposte ai nuovi commenti rilevati}
+    {Il sistema deve poter visualizzare una pagina dei risultati di un'analisi di immagini o video}
     \label{rf:RFO-4}%
 
-    \subreq{RFO-4.1}{\hyperref[uc:UC-10]{UC-10}}{Il sistema deve visualizzare un pulsante che permetta di iniziare la pubblicazione delle risposte ai nuovi commenti}
+    \subreq{RFO-4.1}{\hyperref[uc:UC-2]{UC-2}}{Il sistema deve visualizzare la pagina dei risultati sottoforma di una lista scorrevole di elementi, seguendo \hyperref[rf:RFO-5]{RFO-5}}
+    \subreq{RFO-4.2}{\hyperref[uc:UC-2]{UC-2}}{Il sistema deve visualizzare il numero totale delle pagine di risultati}
+    \subreq{RFO-4.3}{\hyperref[uc:UC-2]{UC-2}}{Il sistema deve visualizzare il numero della pagina visualizzata}
+    \subreq{RFO-4.4}{\hyperref[uc:UC-2]{UC-2}}{Il sistema deve visualizzare i pulsanti necessari per cambiare pagina di risultati}
 \end{freq}
 
 \begin{freq}
     {RFO-5}
-    {Il sistema deve poter visualizzare gli elementi necessari per notificare l'esito della pubblicazione delle risposte ai nuovi commenti}
+    {Il sistema deve poter visualizzare un risultato dell'analisi}
     \label{rf:RFO-5}%
 
-    \subreq{RFO-5.1}{\hyperref[uc:UC-10]{UC-10}}{Il sistema deve visualizzare un messaggio che informa l'utente che la pubblicazione delle risposte è in esecuzione}
-    \subreq{RFO-5.2}{\hyperref[uc:UC-10]{UC-10}}{Il sistema deve visualizzare un messaggio che indica il successo della pubblicazione delle risposte ai commenti}
-    \subreq{RFO-5.3}{\hyperref[uc:UC-9]{UC-9}}{Se il caricamento della pagina di un post durante la pubblicazione non viene completato nei tempi previsti, il sistema deve visualizzare un messaggio che informa l'utente dell'errore}
-    \subreq{RFO-5.4}{\hyperref[uc:UC-11]{UC-11}}{Se si verifica un errore durante il recupero delle risposte ai commenti da pubblicare, il sistema deve visualizzare un messaggio che informa l'utente dell'errore}
+    \subreq{RFO-5.1}{\hyperref[uc:UC-2]{UC-2}}{Nel caso di un'immagine, il sistema deve permettere la visualizzazione dell'immagine analizzata}
+    \subreq{RFO-5.2}{\hyperref[uc:UC-2]{UC-2}}{Nel caso di un video, il sistema deve permettere la visualizzazione, se presente, dell'immagine assegnata come poster al video, altrimenti un'immagine di default}
+    \subreq{RFO-5.3}{\hyperref[uc:UC-2]{UC-2}}{Il sistema deve mostrare il valore dell'attributo \texttt{src} dell'immagine o del video}
+    \subreq{RFO-5.4}{\hyperref[uc:UC-2]{UC-2}, \hyperref[uc:UC-4]{UC-4}}{Nel caso di un'immagine, il sistema deve mostrare l'\texttt{alt} suggerito}
+    \subreq{RFO-5.5}{\hyperref[uc:UC-2]{UC-2}, \hyperref[uc:UC-7]{UC-7}}{Nel caso di un video, il sistema deve mostrare i sottotitoli suggeriti}
+
 \end{freq}
 
 \begin{freq}
     {RFO-6}
-    {Il sistema deve poter visualizzare gli elementi necessari per permettere il download dei dati raccolti in un file JSON}
+    {In caso di errore durante l'analisi, il sistema deve visualizzare un messaggio informativo}
     \label{rf:RFO-6}%
 
-    \subreq{RFO-6.1}{\hyperref[uc:UC-12]{UC-12}}{Il sistema deve visualizzare un pulsante che permetta di iniziare il download del file JSON con i nuovi dati raccolti}
-    \subreq{RFO-6.2}{\hyperref[uc:UC-12]{UC-12}}{Il sistema deve visualizzare una finestra di dialogo che permetta di selezionare la cartella dove salvare il file}
-
-\end{freq}
-
-\begin{freq}
-    {RFO-7}
-    {Il sistema deve visualizzare gli elementi necessari per notificare l'esito del download del file}
-    \label{rf:RFO-7}%
-
-    \subreq{RFO-7.1}{\hyperref[uc:UC-12]{UC-12}}{Il sistema deve visualizzare un messaggio che indica il successo del download del file JSON}
-    \subreq{RFO-7.2}{\hyperref[uc:UC-13]{UC-13}}{Se il download del file viene interrotto, il sistema deve visualizzare un messaggio che informa l'utente dell'interruzione}
+    \subreq{RFO-6.1}{\hyperref[uc:UC-5]{UC-5}, \hyperref[uc:UC-8]{UC-8}}{Il sistema deve mostrare un messaggio informativo in caso di errore nell'interazione con l'LLM}
 \end{freq}
 
 \paragraph{Facoltativi}
 
 \begin{freq}
     {RFF-1}
-    {Il sistema deve permettere la visualizzazione di un messaggio che indica il risultato dell'analisi del layout di Instagram}
+    {Il sistema deve poter visualizzare gli elementi necessari per avviare un'analisi dell'ordine della sequenza di tabulazione}
     \label{rf:RFF-1}%
-
-    \subreq{RFF-1.1}{\hyperref[uc:UC-1]{UC-1}}{Il sistema deve visualizzare un messaggio che informa l'utente che l'analisi del layout di Instagram è in esecuzione}
-    \subreq{RFF-1.2}{\hyperref[uc:UC-1]{UC-1}}{Se l'analisi del layout di Instagram ha esito positivo, il sistema deve mostrare un messaggio che ne conferma il successo}
-    \subreq{RFF-1.3}{\hyperref[uc:UC-2]{UC-2}}{Se l'analisi del layout di Instagram ha esito negativo, il sistema deve visualizzare un messaggio che indica l'impossibilità di effettuare una raccolta dati}
-    \subreq{RFO-1.4}{\hyperref[uc:UC-2]{UC-2}}{Se l'analisi del layout di Instagram ha esito negativo, il sistema deve visualizzare un messaggio che indica ogni elemento del layout Instagram non trovato}
+    \subreq{RFF-1.1}{\hyperref[uc:UC-9]{UC-9}}{Il sistema deve visualizzare un pulsante che permetta di iniziare l'analisi dell'ordine della squenza di tabulazione}
 \end{freq}
 
 \begin{freq}
     {RFF-2}
-    {Il sistema deve poter visualizzare gli elementi necessari per notificare l'esito del calcolo delle differenze tra i dati raccolti}
+    {Il sistema deve poter visualizzare il risultato dell'analisi dell'ordine della sequenza di tabulazione}
     \label{rf:RFF-2}%
 
-    \subreq{RFO-2.1}{\hyperref[uc:UC-6]{UC-6}}{Se vengono rilevate differenze tra i dati dell'ultima raccolta e quelli della raccolta precedente, il sistema deve visualizzare un messaggio che informa l'utente della presenza di variazioni nei nuovi dati raccolti}
-    \subreq{RFO-2.2}{\hyperref[uc:UC-6]{UC-6}}{Se non vengono rilevate differenze tra i dati dell'ultima raccolta e quelli della raccolta precedente, il sistema deve visualizzare un messaggio che informa l'utente che i nuovi dati raccolti coincidono con quelli precedenti}
-    \subreq{RFO-2.3}{\hyperref[uc:UC-7]{UC-7}}{Se si verifica un errore durante l'ottenimento dei dati delle ultime due raccolte, il sistema deve visualizzare un messaggio che informa l'utente dell'errore}
+    \subreq{RFF-2.1}{\hyperref[uc:UC-9]{UC-9}}{Il sistema deve mostrare il numero totale di elementi tabbabili individuati}
+    \subreq{RFF-2.2}{\hyperref[uc:UC-10]{UC-10}}{Il sistema deve mostrare una lista con le incongruenze individuate nell'ordine della sequenza di tabulazione}
 \end{freq}
 
 \subsubsection{Logica di business}
@@ -105,93 +92,65 @@ I requisiti funzionali sono raggruppati usando una divisione ad alto livello del
 \paragraph{Obbligatori}
 
 \begin{freq}
-    {RFO-8}
+    {RFO-7}
     {Il sistema deve poter gestire la persistenza dei dati raccolti}
+    \label{rf:RFO-7}%
+
+    \subreq{RFO-7.1}{\hyperref[uc:UC-1]{UC-1}}{Il sistema deve poter salvare in modo persistente le informazioni relative alle immagini o ai video analizzati}
+    \subreq{RFO-7.2}{\hyperref[uc:UC-1]{UC-1}, \hyperref[uc:UC-6]{UC-6}}{Il sistema deve poter ottenere le informazioni dei dati salvati}
+\end{freq}
+
+\begin{freq}
+    {RFO-8}
+    {Il sistema deve poter analizzare le immagini senza alt}
     \label{rf:RFO-8}%
 
-    \subreq{RFO-8.1}{\hyperref[uc:UC-8]{UC-8}}{Il sistema deve poter salvare in modo persistente i dati ottenuti durante una raccolta}
-    \subreq{RFO-8.2}{\hyperref[uc:UC-6]{UC-6}, \hyperref[uc:UC-8]{UC-8}, \hyperref[uc:UC-12]{UC-12}}{Il sistema deve poter ottenere i dati salvati durante l'ultima raccolta}
+    \subreq{RFO-8.1}{\hyperref[uc:UC-1]{UC-1}}{Il sistema deve poter ottenere una lista delle immagini presenti all'interno della pagina}
+    \subreq{RFO-8.2}{\hyperref[uc:UC-1]{UC-1}}{Il sistema deve poter determinare la presenza dell'attributo \texttt{alt} per ogni immagine individuata}
+    \subreq{RFO-8.3}{\hyperref[uc:UC-1]{UC-1}}{Il sistema deve poter ottenere il valore dell'attributo \texttt{src} delle immagini individuate}
+    \subreq{RFO-8.4}{\hyperref[uc:UC-1]{UC-1}}{Il sistema deve poter calcolare il \texttt{base64} di un'immagine}
+    \subreq{RFO-8.5}{\hyperref[uc:UC-1]{UC-1}, \hyperref[uc:UC-4]{UC-4}}{Il sistema deve poter fornire il \texttt{base64} di un'immagine all'interno della richiesta all'LLM}
+    \subreq{RFO-8.6}{\hyperref[uc:UC-1]{UC-1}, \hyperref[uc:UC-2]{UC-2}}{Il sistema deve poter modificare lo stile CSS di un'immagine individuata}
+
 \end{freq}
 
 \begin{freq}
     {RFO-9}
-    {Il sistema deve poter gestire le tab aperte}
+    {Il sistema deve poter analizzare i video senza sottotitoli}
     \label{rf:RFO-9}%
 
-    \subreq{RFO-9.1}{\hyperref[uc:UC-3]{UC-3}}{Il sistema deve poter ottenere una lista delle tab aperte nella finestra del Browser}
-    \subreq{RFO-9.2}{\hyperref[uc:UC-4]{UC-4}}{Il sistema deve poter ottenere l'URL di ogni tab aperta}
-    \subreq{RFO-9.3}{\hyperref[uc:UC-4]{UC-4}}{Il sistema deve poter verificare se l'URL di una tab aperta corrisponde a un dominio di Instagram}
-    \subreq{RFO-9.4}{\hyperref[uc:UC-5]{UC-5}}{Il sistema deve essere in grado di acquisire i cookie da una tab aperta}
-    \subreq{RFO-9.5}{\hyperref[uc:UC-5]{UC-5}}{Il sistema deve controllare che siano presenti i cookie di autenticazione di Instagram}
+    \subreq{RFO-9.1}{\hyperref[uc:UC-6]{UC-6}}{Il sistema deve poter ottenere una lista dei video presenti all'interno della pagina}
+    \subreq{RFO-9.2}{\hyperref[uc:UC-6]{UC-6}}{Il sistema deve poter determinare la presenza di sottotitoli per ogni video individuato}
+    \subreq{RFO-9.3}{\hyperref[uc:UC-6]{UC-6}}{Il sistema deve poter ottenere il valore dell'attributo \texttt{src} dei video individuati}
+    \subreq{RFO-9.4}{\hyperref[uc:UC-6]{UC-6}}{Il sistema deve poter ottenere il binario di un video}
+    \subreq{RFO-9.5}{\hyperref[uc:UC-6]{UC-6}, \hyperref[uc:UC-7]{UC-7}}{Il sistema deve poter fornire il binario di un video all'interno della richiesta all'LLM}
+    \subreq{RFO-9.6}{\hyperref[uc:UC-6]{UC-6}, \hyperref[uc:UC-2]{UC-2}}{Il sistema deve poter modificare lo stile CSS di un video individuato}
 \end{freq}
 
 \begin{freq}
     {RFO-10}
-    {Il sistema deve poter navigare tra le pagine di Instagram}
+    {Il sistema deve poter gestire errori nella connessione con l'LLM}
     \label{rf:RFO-10}%
 
-    \subreq{RFO-10.1}{\hyperref[uc:UC-8]{UC-8}, \hyperref[uc:UC-10]{UC-10}}{Il sistema deve poter ottenere il pulsante nel layout Instagram per accedere alla pagina del profilo personale}
-    \subreq{RFO-10.2}{\hyperref[uc:UC-8]{UC-8}}{Il sistema deve poter ottenere il numero di post totali pubblicati nel profilo personale}
-    \subreq{RFO-10.3}{\hyperref[uc:UC-8]{UC-8}, \hyperref[uc:UC-10]{UC-10}}{Il sistema deve poter ottenere il link per caricare l'ultimo post pubblicato nel profilo personale}
-    \subreq{RFO-10.4}{\hyperref[uc:UC-8]{UC-8}, \hyperref[uc:UC-10]{UC-10}}{Il sistema deve poter ottenere il pulsante nel layout Instagram per navigare al post successivo}
-    \subreq{RFO-10.5}{\hyperref[uc:UC-8]{UC-8}, \hyperref[uc:UC-10]{UC-10}, \hyperref[uc:UC-9]{UC-9}}{Il sistema deve poter determinare il cambiamento dell'URL della pagina}
-    \subreq{RFO-10.6}{\hyperref[uc:UC-8]{UC-8}, \hyperref[uc:UC-10]{UC-10}}{Il sistema deve poter determinare cambiamenti avvenuti al DOM della pagina}
-\end{freq}
-
-\begin{freq}
-    {RFO-11}
-    {Il sistema deve poter ottenere i dati di un post di Instagram}
-    \label{rf:RFO-11}%
-
-    \subreq{RFO-11.1}{\hyperref[uc:UC-8]{UC-8}}{Il sistema deve poter ottenere il numero del post}
-    \subreq{RFO-11.2}{\hyperref[uc:UC-8]{UC-8}}{Il sistema deve poter ottenere la caption del post}
-    \subreq{RFO-11.3}{\hyperref[uc:UC-8]{UC-8}}{Il sistema deve poter ottenere il numero di likes al post}
-    \subreq{RFO-11.4}{\hyperref[uc:UC-8]{UC-8}, \hyperref[uc:UC-10]{UC-10}}{Il sistema deve poter ottenere l'URL della pagina del post}
-    \subreq{RFO-11.5}{\hyperref[uc:UC-8]{UC-8}}{Il sistema deve poter ottenere il valore dell'attributo "src" nel caso in cui il post sia un'immagine}
-    \subreq{RFO-11.6}{\hyperref[uc:UC-8]{UC-8}, \hyperref[uc:UC-10]{UC-10}}{Il sistema deve poter ottenere testo e autore di tutti i commenti al post che non contengono solo immagini}
-    \subreq{RFO-11.7}{\hyperref[uc:UC-8]{UC-8}, \hyperref[uc:UC-10]{UC-10}}{Il sistema deve poter ottenere il pulsante per caricare i nuovi commenti}
-
-\end{freq}
-
-\begin{freq}
-    {RFO-12}
-    {Il sistema deve poter pubblicare una risposta ad un commento su un post di Instagram}
-    \label{rf:RFO-12}%
-
-    \subreq{RFO-12.1}{\hyperref[uc:UC-10]{UC-10}}{Il sistema deve poter identificare il commento corrispondente dato il testo, l'autore e l'URL del post in cui è pubblicato}
-    \subreq{RFO-12.2}{\hyperref[uc:UC-10]{UC-10}}{Il sistema deve poter ottenere il pulsante per rispondere ad un commento}
-    \subreq{RFO-12.3}{\hyperref[uc:UC-10]{UC-10}}{Il sistema deve poter ottenere l'area di testo in cui inserire il testo della risposta}
-    \subreq{RFO-12.4}{\hyperref[uc:UC-10]{UC-10}}{Il sistema deve poter inserire correttamente il testo della risposta nell'area di testo}
-    \subreq{RFO-12.5}{\hyperref[uc:UC-10]{UC-10}}{Il sistema deve poter ottenere il pulsante per pubblicare la risposta al commento}
-    \subreq{RFO-12.6}{\hyperref[uc:UC-10]{UC-10}, \hyperref[uc:UC-11]{UC-11}}{Il sistema deve poter ottenere le risposte ai commenti da pubblicare}
-
-\end{freq}
-
-\begin{freq}
-    {RFO-13}
-    {Il sistema deve poter gestire il download di un file JSON}
-    \label{rf:RFO-13}%
-
-    \subreq{RFO-13.1}{\hyperref[uc:UC-12]{UC-12}}{Il sistema deve poter effettuare il download di un file nel file system locale}
-    \subreq{RFO-13.2}{\hyperref[uc:UC-13]{UC-13}}{Il sistema deve poter determinare lo stato del download in corso}
+    \subreq{RFO-10.1}{\hyperref[uc:UC-5]{UC-5}, \hyperref[uc:UC-8]{UC-8}}{In caso di indisponibilità dell'LLM, il sistema deve essere in grado di gestire l'errore in modo appropriato}
+    \subreq{RFO-10.2}{\hyperref[uc:UC-8]{UC-8}}{Il sistema deve rilevare quando un errore è causato dall'invio di un video in un formato non supportato}
 \end{freq}
 
 \paragraph{Facoltativi}
 
 \begin{freq}
     {RFF-3}
-    {Il sistema deve poter analizzare il layout di Instagram}
+    {Il sistema deve poter analizzare l'ordine della sequenza di tabulazione}
     \label{rf:RFF-3}%
 
-    \subreq{RFF-3.1}{\hyperref[uc:UC-1]{UC-1}}{Il sistema deve poter aprire una tab di Instagram temporanea di un account di test}
-    \subreq{RFF-3.2}{\hyperref[uc:UC-1]{UC-1}, \hyperref[uc:UC-2]{UC-2}}{Il sistema deve essere in grado di verificare che ciascun selettore di un elemento della pagina di Instagram individui correttamente l'elemento corrispondente nella pagina dell'account di test}
-\end{freq}
+    \subreq{RFF-3.1}{\hyperref[uc:UC-9]{UC-9}}{Il sistema deve poter individuare tutti gli elementi tabbabili all'interno di una pagina}
+    \subreq{RFF-3.2}{\hyperref[uc:UC-9]{UC-9}}{Il sistema deve poter ordinare gli elementi tabbabili secondo l'ordine della sequenza di tabulazione}
+    \subreq{RFF-3.3}{\hyperref[uc:UC-9]{UC-9}, \hyperref[uc:UC-10]{UC-10}}{Il sistema deve poter ottenere il valore dell'attributo \texttt{tabindex} di un elemento della pagina, se presente}
+    \subreq{RFF-3.4}{\hyperref[uc:UC-9]{UC-9}}{Il sistema deve poter determinare la posizione assoluta di un elemento all'interno della pagina}
+    \subreq{RFF-3.5}{\hyperref[uc:UC-9]{UC-9}}{Il sistema deve essere in grado di identificare i contenitori semantici che racchiudono ciascun elemento}
+    \subreq{RFF-3.6}{\hyperref[uc:UC-9]{UC-9}}{Il sistema deve poter determinare se due elementi tabbabili sono consecutivi nell'ordine della sequenza di tabulazione}
+    \subreq{RFF-3.7}{\hyperref[uc:UC-9]{UC-9}}{Il sistema deve essere in grado di determinare la posizione relativa di un elemento rispetto a un altro, valutando se è più in alto o più a destra nella pagina}
+    \subreq{RFF-3.8}{\hyperref[uc:UC-10]{UC-10}}{Il sistema deve poter modificare lo stile CSS di elemento tabbabile}
+    \subreq{RFF-3.9}{\hyperref[uc:UC-10]{UC-10}}{Il sistema deve poter aggiungere nella pagina un badge per ogni elemento che indica la sua posizione nell'ordine della sequenza di tabulazione}
 
-\begin{freq}
-    {RFF-4}
-    {Il sistema deve gestire le differenze tra i dati raccolti nelle esecuzioni consecutive}
-    \label{rf:RFF-4}%
-
-    \subreq{RFF-4.1}{\hyperref[uc:UC-6]{UC-6}}{Il sistema deve poter calcolare le differenze tra due set di dati raccolti}
-    \subreq{RFF-4.2}{\hyperref[uc:UC-6]{UC-6}}{Il sistema deve rappresentare le differenze calcolate in un formato JSON strutturato}
 \end{freq}
